@@ -94,20 +94,34 @@
       },
       "routes": [
         {
-          "name": "RouteView1",
+          "name": "RouteTiles",
           "pattern": ":?query:",
           "target": [
-            "TargetView1"
+            "TargetTiles"
+          ]
+        },
+        {
+          "name": "first",
+          "pattern": "first",
+          "target": [
+            "Countdown"
           ]
         }
       ],
       "targets": {
-        "TargetView1": {
+        "TargetTiles": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
-          "viewId": "View1",
-          "viewName": "View1"
+          "viewId": "Tiles",
+          "viewName": "Tiles"
+        },
+        "Countdown": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "countdown.Countdown",
+          "viewName": "countdown.Countdown"
         }
       }
     },

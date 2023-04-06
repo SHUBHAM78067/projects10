@@ -6,7 +6,7 @@
     <l:VerticalLayout>
     <l:HorizontalLayout content="{tiles>/}" allowWrapping="true">
     <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{tiles>title}"
-    subheader="{tiles>subtitle}" press="press(${tiles>route})">
+    subheader="{tiles>subtitle}" backgroundImage="{tiles>backgroundImage}" press="press(${tiles>route})">
 	</GenericTile>
     </l:HorizontalLayout>
     </l:VerticalLayout>

@@ -1,8 +1,9 @@
 [
     {
         "title" :"Project 1",
-        "subtitle" :"CountDown",
-        "route" :"first"
+        "subtitle" :"Shubham's Birthday",
+        "route" :"first",
+        "backgroundImage": "./utils/shubhi.jpg"
     },
     {
         "title" :"Project 2",

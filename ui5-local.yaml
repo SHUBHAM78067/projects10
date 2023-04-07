@@ -14,6 +14,7 @@ framework:
     - name: sap.suite.ui.generic.template
     - name: sap.ui.comp
     - name: sap.ui.generic.app
+    - name: sap.viz
     - name: sap.ui.table
     - name: sap.ushell
     - name: themelib_sap_horizon

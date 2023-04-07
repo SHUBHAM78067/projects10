@@ -1,0 +1,43 @@
+<mvc:View controllerName="FioriTilesfor10Projects.projects10.controller.covid.Covid"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:viz="sap.viz.ui5.controls"
+    xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+     xmlns:viz.data="sap.viz.ui5.data">
+    <Page id="Covid" showHeader="false">
+    <Panel expandable="false" headerText="Covid Data" width="auto" class="sapUiResponsiveMargin">
+		<content>
+				<Button type="Accept" text="Latest Count By List" press="onPressList" />
+                
+				<Button type="Reject" text="Latest Count By Graph" press="onPressGraph" />
+		</content>
+    </Panel>
+	
+          <viz:Popover id="idPopOver"></viz:Popover>
+            <viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}"
+                height='100%' width="100%" vizType='line'>
+                <viz:dataset>
+                    <viz.data:FlattenedDataset data="{/data}">
+                        <viz.data:dimensions>
+                            <viz.data:DimensionDefinition name="day"
+                                value="{day}" />
+                        </viz.data:dimensions>
+                        <viz.data:measures>
+                            <viz.data:MeasureDefinition name="total"
+                                value="{summary/total}" />
+                        </viz.data:measures>
+                    </viz.data:FlattenedDataset>
+                </viz:dataset>
+
+                <viz:feeds>
+                    <viz.feeds:FeedItem id='valueAxisFeed' uid="valueAxis" type="Measure"
+                        values="total" />
+                    <viz.feeds:FeedItem id='categoryAxisFeed' uid="categoryAxis" type="Dimension"
+                        values="day" />
+                </viz:feeds>
+            </viz:VizFrame>
+  
+    </Page>
+    
+</mvc:View>

@@ -106,6 +106,13 @@
           "target": [
             "Countdown"
           ]
+        },
+        {
+          "name": "second",
+          "pattern": "second",
+          "target": [
+            "Covid"
+          ]
         }
       ],
       "targets": {
@@ -122,7 +129,15 @@
           "clearControlAggregation": false,
           "viewId": "countdown.Countdown",
           "viewName": "countdown.Countdown"
+        },
+        "Covid": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "covid.Covid",
+          "viewName": "covid.Covid"
         }
+
       }
     },
     "rootView": {

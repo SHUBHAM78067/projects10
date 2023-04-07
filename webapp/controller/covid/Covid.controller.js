@@ -60,10 +60,10 @@ sap.ui.define([
                 // this.getView().setModel(myCovidModel,"covid");
             },
             onPressList:function () {
-                alert("list");
+                this.getOwnerComponent().getRouter().navTo("second-list");
             },
             onPressGraph:function () {
-                alert("graph");
+                this.getOwnerComponent().getRouter().navTo("second-graph");
             }
           
         });

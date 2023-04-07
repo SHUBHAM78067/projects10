@@ -113,6 +113,20 @@
           "target": [
             "Covid"
           ]
+        },
+        {
+          "name": "second-list",
+          "pattern": "second-list",
+          "target": [
+            "Covid-List"
+          ]
+        },
+        {
+          "name": "second-graph",
+          "pattern": "second-graph",
+          "target": [
+            "Covid-Graph"
+          ]
         }
       ],
       "targets": {
@@ -136,6 +150,20 @@
           "clearControlAggregation": false,
           "viewId": "covid.Covid",
           "viewName": "covid.Covid"
+        },
+        "Covid-List": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "covid.List",
+          "viewName": "covid.List"
+        },
+        "Covid-Graph": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "covid.Graph",
+          "viewName": "covid.Graph"
         }
 
       }

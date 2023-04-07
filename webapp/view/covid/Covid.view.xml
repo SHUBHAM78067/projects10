@@ -6,7 +6,7 @@
     xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
      xmlns:viz.data="sap.viz.ui5.data">
     <Page id="Covid" showHeader="false">
-    <Panel expandable="true" headerText="Covid Data" width="auto" class="sapUiResponsiveMargin">
+    <Panel expandable="False" headerText="Covid Data" width="auto" class="sapUiResponsiveMargin">
 		<content>
 				<Button type="Accept" text="Latest Count By List" press="onPressList" />
                 

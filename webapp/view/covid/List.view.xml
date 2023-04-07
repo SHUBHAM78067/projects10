@@ -1,0 +1,21 @@
+<mvc:View controllerName="FioriTilesfor10Projects.projects10.controller.covid.List"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout">
+    <Page id="idCovidList">
+  	<List
+		id="myList"
+		mode="MultiSelect"
+		headerText="Total Active Cases {Latest>/data/summary/total} in India"
+		items="{Latest>/data/regional}">
+		<items>
+			<StandardListItem
+				title="{Latest>loc}"
+				description="Total Cases {Latest>totalConfirmed}"
+				info="Deaths {Latest>deaths}"/>
+			
+		</items>
+	</List>
+  </Page>
+    
+</mvc:View>

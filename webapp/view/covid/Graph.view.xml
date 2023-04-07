@@ -1,0 +1,7 @@
+<mvc:View controllerName="FioriTilesfor10Projects.projects10.controller.covid.Graph"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout">
+  <Button text="hi"></Button>
+    
+</mvc:View>

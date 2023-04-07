@@ -11,7 +11,7 @@ sap.ui.define([
         "use strict";
 
         return Controller.extend("FioriTilesfor10Projects.projects10.controller.covid.Covid", {
-            dataPath : "../model/covid.json",
+            dataPath : "https://api.rootnet.in/covid19-in/stats/history",
             oVizFrame : null,
            
             onInit: function () {

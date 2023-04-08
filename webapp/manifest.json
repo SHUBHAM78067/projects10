@@ -115,6 +115,13 @@
           ]
         },
         {
+          "name": "third",
+          "pattern": "third",
+          "target": [
+            "Vacc"
+          ]
+        },
+        {
           "name": "second-list",
           "pattern": "second-list",
           "target": [
@@ -150,6 +157,13 @@
           "clearControlAggregation": false,
           "viewId": "covid.Covid",
           "viewName": "covid.Covid"
+        },
+        "Vacc": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "vacc.Vacc",
+          "viewName": "vacc.Vacc"
         },
         "Covid-List": {
           "viewType": "XML",

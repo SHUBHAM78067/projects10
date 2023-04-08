@@ -9,5 +9,10 @@
         "title" :"Project 2",
         "subtitle" :"Covid 19 Application",
         "route" :"second"
+    },
+    {
+        "title" :"Project 3",
+        "subtitle" :"Vaccination Tracker",
+        "route" :"third"
     }
 ]

@@ -1,0 +1,9 @@
+<mvc:View controllerName="FioriTilesfor10Projects.projects10.controller.vacc.Vacc"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout">
+    <Page id="vacc" showHeader="false">
+      <Button text="hi"></Button>
+    </Page>
+    
+</mvc:View>

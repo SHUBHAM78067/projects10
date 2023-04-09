@@ -1,0 +1,114 @@
+[
+    {
+       "vacc":"Typhoid",
+       "company":"Novartis",
+       "date":"Apr 9 2023",
+       "type":"Injectable",
+       "ctype":"Type01"
+    },
+    {
+       "vacc":"Malaria",
+       "company":"BiohibTM",
+       "date":"May 24 2023",
+       "type":"Injectable",
+       "ctype":"Type01"
+    },
+    {
+       "vacc":"Gonorrhea",
+       "company":"Biopolio",
+       "date":"May 25 2023",
+       "type":"Injectable",
+       "ctype":"Type01"
+    },
+    {
+       "vacc":"Influenza",
+       "company":"COVAXIN",
+       "date":"May 26 2023",
+       "type":"Oral",
+       "ctype":"Type02"
+    },
+    {
+       "vacc":"Mumps",
+       "company":"Indirab",
+       "date":"May 27 2023",
+       "type":"Injectable",
+       "ctype":"Type01"
+    },
+    {
+       "vacc":"Norovirus",
+       "company":"JENVAC",
+       "date":"May 28 2023",
+       "type":"Injectable",
+       "ctype":"Type01"
+    },
+    {
+       "vacc":"Hand Hygiene",
+       "company":"Revac",
+       "date":"May 29 2023",
+       "type":"Oral",
+       "ctype":"Type02"
+    },
+    {
+       "vacc":"Typhoid Fever",
+       "company":"Revac",
+       "date":"May 30 2023",
+       "type":"Injectable",
+       "ctype":"Type01"
+    },
+    {
+       "vacc":"Vibrio vulnificus",
+       "company":"ROTAVAC",
+       "date":"June 4 2023",
+       "type":"Oral",
+       "ctype":"Type02"
+    },
+    {
+       "vacc":"Yellow Fever",
+       "company":"ROTAVAC ",
+       "date":"June 5 2023",
+       "type":"Injectable",
+       "ctype":"Type01"
+    },
+    {
+       "vacc":"Zika Virus",
+       "company":"5D",
+       "date":"June 6 2023",
+       "type":"Injectable",
+       "ctype":"Type01"
+    },
+    {
+       "vacc":"Polio polio myelitis",
+       "company":"Typbar",
+       "date":"June 7 2023",
+       "type":"Oral",
+       "ctype":"Type02"
+    },
+    {
+       "vacc":"Ringworm",
+       "company":"Typbar ",
+       "date":"June 8 2023",
+       "type":"Injectable",
+       "ctype":"Type01"
+    },
+    {
+       "vacc":"Rocky Mountain Spotted Fever",
+       "company":"Therapeutics",
+       "date":"June 9 2023",
+       "type":"Injectable",
+       "ctype":"Type01"
+    },
+    {
+       "vacc":"Dengue Fever",
+       "company":"SLVRGEN",
+       "date":"June 10 2023",
+       "type":"Injectable",
+       "ctype":"Type01"
+    },
+    {
+       "vacc":"Blue-Green Algae",
+       "company":"Biogit",
+       "date":"June 11 2023",
+       "type":"Oral",
+       "ctype":"Type02"
+    }
+ ]

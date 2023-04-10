@@ -19,7 +19,7 @@
         "title" :"Project 4",
         "subtitle" :"Flexible Column Layout",
         "route": "EXT-third",
-        "url" : "http://google.com"
+        "url" : "http://localhost:51483/webapp/index.html?hc_reset&origional-url=index.html&sap-ui-appCacheBuster=..%2F&sap-ui-xx-componentPreload=off"
         
     }
 ]

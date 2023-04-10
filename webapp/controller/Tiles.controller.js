@@ -15,7 +15,12 @@ sap.ui.define([
 
             },
             press:function (oRoute){
-                this.getOwnerComponent().getRouter().navTo(oRoute);
+                if(oRoute.substring(0,4) == 'EXT-'){
+                  let selItem =  JSON.parse(this.getView().getModel("tiles").getJSON()).find(item => {if(item.route == oRoute){return item;}});
+                  sap.m.URLHelper.redirect(selItem.url);
+                }else{
+                    this.getOwnerComponent().getRouter().navTo(oRoute);
+                }
             }
         });
     });

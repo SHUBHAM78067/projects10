@@ -14,5 +14,12 @@
         "title" :"Project 3",
         "subtitle" :"Vaccination Tracker",
         "route" :"third"
+    },
+    {
+        "title" :"Project 4",
+        "subtitle" :"Flexible Column Layout",
+        "route": "EXT-third",
+        "url" : "https://google.com"
+        
     }
 ]

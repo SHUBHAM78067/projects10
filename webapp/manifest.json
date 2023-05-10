@@ -122,6 +122,13 @@
           ]
         },
         {
+          "name": "fourth",
+          "pattern": "fourth",
+          "target": [
+            "Bcr"
+          ]
+        },
+        {
           "name": "second-list",
           "pattern": "second-list",
           "target": [
@@ -164,6 +171,13 @@
           "clearControlAggregation": false,
           "viewId": "vacc.Vacc",
           "viewName": "vacc.Vacc"
+        },
+        "Bcr": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "bcr.Bcr",
+          "viewName": "bcr.Bcr"
         },
         "Covid-List": {
           "viewType": "XML",

@@ -21,5 +21,13 @@
         "route": "EXT-third",
         "url" : "http://localhost:52385/webapp/index.html?hc_reset&origional-url=index.html&sap-ui-appCacheBuster=..%2F&sap-ui-xx-componentPreload=off"
         
+    },
+    {
+        "title" :"Budget Creation Request",
+        "route" :"fourth"
+    },
+    {
+        "title" :"Budget Tranfer Request",
+        "route" :"third"
     }
 ]

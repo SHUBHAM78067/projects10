@@ -1,0 +1,11 @@
+<mvc:View controllerName="FioriTilesfor10Projects.projects10.controller.bcr.Bcr"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+	xmlns:unified="sap.ui.unified">
+    <Page id="bcr" showHeader="true">
+    
+    </Page>
+
+    
+</mvc:View>

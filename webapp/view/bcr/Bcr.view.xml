@@ -4,6 +4,11 @@
     xmlns:l="sap.ui.layout"
 	xmlns:unified="sap.ui.unified">
     <Page id="bcr" showHeader="true">
+    <l:HorizontalLayout class="sapUiSmallMarginTopBottom">
+    <Button text="New Request" type="Neutral" class="sapUiSmallMargin" ></Button>
+    <Button text="Pending Request" type="Critical" class="sapUiSmallMargin" ></Button>
+    <Button text="Approved Request" type="Success" class="sapUiSmallMargin"></Button>
+    </l:HorizontalLayout>
     
     </Page>
 

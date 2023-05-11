@@ -18,17 +18,17 @@ sap.ui.define([
            onpressnr:function (event) {
             this.getView().byId("SimpleFormToolbarnr").setVisible(true);
             this.getView().byId("idsave").setVisible(true);
-            this.getView().byId("idIconTabBar").setVisible(true);
+            this.getView().byId("todoList").setVisible(true);
            },
            onpresspr:function(params) {
             this.getView().byId("SimpleFormToolbarnr").setVisible(false);
             this.getView().byId("idsave").setVisible(false);
-            this.getView().byId("idIconTabBar").setVisible(false);
+            this.getView().byId("todoList").setVisible(false);
            },
            onpressar:function (event) {
             this.getView().byId("SimpleFormToolbarnr").setVisible(false);
             this.getView().byId("idsave").setVisible(false);
-            this.getView().byId("idIconTabBar").setVisible(false);
+            this.getView().byId("todoList").setVisible(false);
            },
            onPressSave:function (event) {
             var oResourceModel = this.getView().getModel("i18n");

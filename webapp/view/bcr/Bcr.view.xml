@@ -2,7 +2,7 @@
 	xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns:unified="sap.ui.unified">
 	<Page id="bcr" showHeader="true">
 		<l:HorizontalLayout class="sapUiSmallMarginTopBottom">
-			<Button text="New Request" type="Neutral" class="sapUiSmallMargin" press="onpressnr"></Button>
+			<Button text="New Request" type="Neutral" class="sapUiSmallMargin" press="onpressnr" ></Button>
 			<Button text="Pending Request" type="Critical" class="sapUiSmallMargin" press="onpresspr"></Button>
 			<Button text="Approved Request" type="Success" class="sapUiSmallMargin" press="onpressar"></Button>
 		</l:HorizontalLayout>
@@ -65,14 +65,24 @@
 		</f:Form>
 		<content>
 			
-			<List id="todoList" visible="false" items="" mode="None" growing="true" growingScrollToLoad="true" showNoData="false" showSeparators="None">
+			<List id="todoList" 
+                  visible="false" 
+                  items="" 
+                  mode="None" 
+                  growing="true" 
+                  growingScrollToLoad="true" 
+                  showNoData="false" 
+                  showSeparators="None">
 				<headerToolbar>
 					<OverflowToolbar id="toolbar" class="sapUiSizeCompact" visible="{= !${view>/isMobile} }">
 						<Button id="btnAddToList" text="Add To List" width="10%" type="Success"></Button>
 					</OverflowToolbar>
 				</headerToolbar>
 				<CustomListItem>
-					<Table id="productsTable" inset="false" showSeparators="Inner" headerText="Request"
+					<Table id="productsTable" 
+                           inset="false" 
+                           showSeparators="Inner" 
+                           headerText="Requests"
 						items="{ path: '/ProductCollection', sorter: { path: 'Name' } }">
 						<columns>
 							<Column>
@@ -109,14 +119,16 @@
 						<items>
 							<ColumnListItem>
 								<cells>
-									<ObjectIdentifier title="{Name}" text="{ProductId}"/>
+								    <Text text="{SupplierName}"/>
 									<Text text="{SupplierName}"/>
-									<Text text="{Width} x {Depth} x {Height} {DimUnit}"/>
-									<ObjectNumber number="{WeightMeasure}" unit="{WeightUnit}"
-										state="{ parts: [ {path: 'WeightMeasure'}, {path: 'WeightUnit'} ], formatter: '.formatter.weightState' }"/>
-									<ObjectNumber
-										number="{ parts:[{path:'Price'},{path:'CurrencyCode'}], type: 'sap.ui.model.type.Currency', formatOptions: {showMeasure: false} }"
-										unit="{CurrencyCode}"/>
+                                    <Text text="{SupplierName}"/>
+                                    <Text text="{SupplierName}"/>
+                                    <Text text="{SupplierName}"/>
+                                    <Text text="{SupplierName}"/>
+                                    <Text text="{SupplierName}"/>
+                                    <Text text="{SupplierName}"/>
+                                    <Text text="{SupplierName}"/>
+                                    <Text text="{SupplierName}"/>
 								</cells>
 							</ColumnListItem>
 						</items>

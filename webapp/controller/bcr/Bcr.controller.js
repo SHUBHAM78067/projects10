@@ -18,14 +18,17 @@ sap.ui.define([
            onpressnr:function (event) {
             this.getView().byId("SimpleFormToolbarnr").setVisible(true);
             this.getView().byId("idsave").setVisible(true);
+            this.getView().byId("idIconTabBar").setVisible(true);
            },
            onpresspr:function(params) {
             this.getView().byId("SimpleFormToolbarnr").setVisible(false);
             this.getView().byId("idsave").setVisible(false);
+            this.getView().byId("idIconTabBar").setVisible(false);
            },
            onpressar:function (event) {
             this.getView().byId("SimpleFormToolbarnr").setVisible(false);
             this.getView().byId("idsave").setVisible(false);
+            this.getView().byId("idIconTabBar").setVisible(false);
            },
            onPressSave:function (event) {
             var oResourceModel = this.getView().getModel("i18n");
@@ -43,6 +46,11 @@ sap.ui.define([
                 }
               },
             });
-           }
+           },
+           handleClick: function(oEvent) {
+            var demoToast = this.getView().byId("demoToast");
+            demoToast.setText("Event click fired.");
+            demoToast.show();
+          }
         });
     });

@@ -11,7 +11,7 @@
     <Button text="Pending Request" type="Critical" class="sapUiSmallMargin" press="onpresspr" ></Button>
     <Button text="Approved Request" type="Success" class="sapUiSmallMargin" press="onpressar"></Button>
     </l:HorizontalLayout>
-     <f:Form id="SimpleFormToolbarnr" editable="true" visible="false">
+     <f:Form id="SimpleFormToolbarnr" editable="true" visible="true">
             <f:layout>
                 <f:ResponsiveGridLayout labelSpanXL="11" labelSpanL="4" labelSpanM="10" labelSpanS="7" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="1" columnsL="2" columnsM="2" singleContainerFullSize="false" />
             </f:layout>
@@ -69,13 +69,107 @@
 		            post="onPost"
 		            showIcon="false" />
                 </f:FormElement>
-
-                
                 <f:layoutData>
                     <f:GridContainerData halfGrid="true" />
                 </f:layoutData>
             </f:FormContainer>
         </f:Form>
+		<content>
+        <Button id="btnAddToList" text="Add To List" width="10%" type="Success"></Button>
+			<Table
+				id="productsTable"
+				inset="false"
+				showSeparators="Inner"
+				headerText="Requests"
+				items="{
+					path: '/ProductCollection',
+					sorter: {
+						path: 'Name'
+					}
+				}">
+				<columns>
+					<Column>
+						<Text text="Vertical" />
+					</Column>
+					<Column
+						minScreenWidth="Tablet"
+						demandPopin="true">
+						<Text text="Amount" />
+					</Column>
+					<Column
+						minScreenWidth="Desktop"
+						demandPopin="true">
+						<Text text="Region" />
+					</Column>
+					<Column
+						minScreenWidth="Desktop"
+						demandPopin="true">
+						<Text text="State" />
+					</Column>
+                    <Column
+						minScreenWidth="Desktop"
+						demandPopin="true">
+						<Text text="Dealer Code" />
+					</Column>
+                    <Column
+						minScreenWidth="Desktop"
+						demandPopin="true">
+						<Text text="Activity" />
+					</Column>
+                    <Column
+						minScreenWidth="Desktop"
+						demandPopin="true">
+						<Text text="Objective" />
+					</Column>
+                    <Column
+						minScreenWidth="Desktop"
+						demandPopin="true">
+						<Text text="From" />
+					</Column>
+                    <Column
+						minScreenWidth="Desktop"
+						demandPopin="true">
+						<Text text="To" />
+					</Column>
+					<Column
+						hAlign="End">
+						<Text text="Remarks" />
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<ObjectIdentifier
+								title="{Name}"
+								text="{ProductId}"/>
+							<Text
+								text="{SupplierName}" />
+							<Text
+								text="{Width} x {Depth} x {Height} {DimUnit}" />
+							<ObjectNumber
+								number="{WeightMeasure}"
+								unit="{WeightUnit}"
+								state="{
+									parts: [
+										{path: 'WeightMeasure'},
+										{path: 'WeightUnit'}
+									],
+									formatter: '.formatter.weightState'
+								}" />
+							<ObjectNumber
+									number="{
+										parts:[{path:'Price'},{path:'CurrencyCode'}],
+										type: 'sap.ui.model.type.Currency',
+										formatOptions: {showMeasure: false}
+									}"
+									unit="{CurrencyCode}" />
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+
+        
         <footer>
 					<Toolbar>
 						<ToolbarSpacer/>

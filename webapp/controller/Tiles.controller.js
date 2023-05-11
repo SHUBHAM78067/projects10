@@ -13,6 +13,7 @@ sap.ui.define([
                 
                 let myTilesModel = new JSONModel("../model/tiles.json");
                 this.getView().setModel(myTilesModel,"tiles");
+                
 
             },
             press:function (oRoute){

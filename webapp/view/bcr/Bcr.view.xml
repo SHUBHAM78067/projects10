@@ -1,14 +1,87 @@
 <mvc:View controllerName="FioriTilesfor10Projects.projects10.controller.bcr.Bcr"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:core="sap.ui.core"
     xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
     xmlns:l="sap.ui.layout"
 	xmlns:unified="sap.ui.unified">
     <Page id="bcr" showHeader="true">
     <l:HorizontalLayout class="sapUiSmallMarginTopBottom">
-    <Button text="New Request" type="Neutral" class="sapUiSmallMargin" ></Button>
-    <Button text="Pending Request" type="Critical" class="sapUiSmallMargin" ></Button>
-    <Button text="Approved Request" type="Success" class="sapUiSmallMargin"></Button>
+    <Button text="New Request" type="Neutral" class="sapUiSmallMargin" press="onpressnr" ></Button>
+    <Button text="Pending Request" type="Critical" class="sapUiSmallMargin" press="onpresspr" ></Button>
+    <Button text="Approved Request" type="Success" class="sapUiSmallMargin" press="onpressar"></Button>
     </l:HorizontalLayout>
+     <f:Form id="SimpleFormToolbarnr" editable="true">
+            <f:layout>
+                <f:ResponsiveGridLayout labelSpanXL="11" labelSpanL="4" labelSpanM="10" labelSpanS="7" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="1" columnsL="2" columnsM="2" singleContainerFullSize="false" />
+            </f:layout>
+
+            <f:FormContainer ariaLabelledBy="Title1">
+                <f:FormElement label="Vertical">
+                    <ComboBox id="1" items="{type>/}" valueState="None" selectionChange="onSelect1" change="onChange" required="true">
+                        <items>
+                            <core:Item key="{type>title}" text="{type>title}" />
+                        </items>
+                    </ComboBox>
+                </f:FormElement>
+                <f:FormElement label="Amount">
+                    <Input placeholder="Amount" required="true" />
+                </f:FormElement>
+                <f:FormElement label="Region">
+                    <Input placeholder="Region" required="true" />
+                </f:FormElement>
+                <f:FormElement label="State">
+                    <Input placeholder="State" required="true" />
+                </f:FormElement>
+                <f:FormElement label="Dealer Code">
+                    	<Input id="productInput" width="100%" placeholder="Enter Dealer Code" showSuggestion="true" showValueHelp="true"
+							valueHelpRequest=".onValueHelpRequest" suggestionItems="{/ProductCollection}">
+							<suggestionItems>
+								<core:Item text="{Name}"/>
+							</suggestionItems>
+						</Input>
+                </f:FormElement>
+                <f:layoutData>
+                    <f:GridContainerData halfGrid="true" />
+                </f:layoutData>
+            </f:FormContainer>
+
+            <f:FormContainer ariaLabelledBy="Title2">
+                <f:FormElement label="Activity">
+                    <Input placeholder="Max.70 char." required="true" />
+                </f:FormElement>
+                <f:FormElement label="Objective">
+                    <Input placeholder="Max.70 char." required="true" />
+                </f:FormElement>
+
+                <f:FormElement label="From">
+                    <DatePicker id="DP1" change="handleChange" class="sapUiSmallMarginBottom" 
+                                afterValueHelpOpen="onafterValueHelpOpen" displayFormat="dd-MM-yyyy" 
+                                required="true" />
+                </f:FormElement>
+                <f:FormElement label="To">
+                    <DatePicker id="DP2" change="handleChange" class="sapUiSmallMarginBottom" 
+                                afterValueHelpOpen="onafterValueHelpOpen" displayFormat="dd-MM-yyyy" 
+                                required="true" />
+                </f:FormElement>
+                <f:FormElement label="Remarks">
+                <FeedInput
+		            post="onPost"
+		            showIcon="false" />
+                </f:FormElement>
+
+                
+                <f:layoutData>
+                    <f:GridContainerData halfGrid="true" />
+                </f:layoutData>
+            </f:FormContainer>
+        </f:Form>
+        <footer>
+					<Toolbar>
+						<ToolbarSpacer/>
+						<Button type="Emphasized" text="Save" press="onPress" width="20%"/>
+					</Toolbar>
+				</footer>
     
     </Page>
 

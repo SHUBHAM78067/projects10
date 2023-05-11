@@ -9,6 +9,9 @@ sap.ui.define([
         "use strict";
 
         return Controller.extend("FioriTilesfor10Projects.projects10.controller.bcr.Bcr", {
-           
+           onInit:function (){
+            let typeModel = new JSONModel("../model/type.json");
+                this.getView().setModel(typeModel,"type");
+           }
         });
     });

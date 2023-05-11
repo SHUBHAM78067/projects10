@@ -79,7 +79,7 @@
         <footer>
 					<Toolbar>
 						<ToolbarSpacer/>
-						<Button id="idsave" type="Emphasized" text="Save" press="onPress" width="20%" visible="false"/>
+						<Button id="idsave" type="Emphasized" text="Save" press="onPressSave" width="20%" visible="false"/>
 					</Toolbar>
 				</footer>
     

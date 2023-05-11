@@ -11,7 +11,7 @@
     <Button text="Pending Request" type="Critical" class="sapUiSmallMargin" press="onpresspr" ></Button>
     <Button text="Approved Request" type="Success" class="sapUiSmallMargin" press="onpressar"></Button>
     </l:HorizontalLayout>
-     <f:Form id="SimpleFormToolbarnr" editable="true">
+     <f:Form id="SimpleFormToolbarnr" editable="true" visible="false">
             <f:layout>
                 <f:ResponsiveGridLayout labelSpanXL="11" labelSpanL="4" labelSpanM="10" labelSpanS="7" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="1" columnsL="2" columnsM="2" singleContainerFullSize="false" />
             </f:layout>
@@ -79,7 +79,7 @@
         <footer>
 					<Toolbar>
 						<ToolbarSpacer/>
-						<Button type="Emphasized" text="Save" press="onPress" width="20%"/>
+						<Button id="idsave" type="Emphasized" text="Save" press="onPress" width="20%" visible="false"/>
 					</Toolbar>
 				</footer>
     

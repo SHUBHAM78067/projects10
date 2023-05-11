@@ -6,7 +6,7 @@
 			<Button text="Pending Request" type="Critical" class="sapUiSmallMargin" press="onpresspr"></Button>
 			<Button text="Approved Request" type="Success" class="sapUiSmallMargin" press="onpressar"></Button>
 		</l:HorizontalLayout>
-		<f:Form id="SimpleFormToolbarnr" editable="true" visible="false">
+		<f:Form id="SimpleFormToolbarnr" editable="true" visible="true">
 			<f:layout>
 				<f:ResponsiveGridLayout labelSpanXL="11" labelSpanL="4" labelSpanM="10" labelSpanS="7" emptySpanXL="0" emptySpanL="0" emptySpanM="0"
 					emptySpanS="0" columnsXL="1" columnsL="2" columnsM="2" singleContainerFullSize="false"/>
@@ -20,19 +20,19 @@
 					</ComboBox>
 				</f:FormElement>
 				<f:FormElement label="Amount">
-					<Input placeholder="Amount" required="true"/>
+					<Input placeholder="Amount" required="true" value="{locmodel>/reqData/AMOUNT/}"/>
 				</f:FormElement>
 				<f:FormElement label="Region">
-					<Input placeholder="Region" required="true"/>
+					<Input placeholder="Region" required="true" value="{locmodel>/reqData/AMOUNT/}"/>
 				</f:FormElement>
 				<f:FormElement label="State">
-					<Input placeholder="State" required="true"/>
+					<Input placeholder="State" required="true" value="{locmodel>/reqData/AMOUNT/}"/>
 				</f:FormElement>
 				<f:FormElement label="Dealer Code">
 					<Input id="productInput" width="100%" placeholder="Enter Dealer Code" showSuggestion="true" showValueHelp="true"
-						valueHelpRequest=".onValueHelpRequest" suggestionItems="{/ProductCollection}">
+						valueHelpRequest=".onValueHelpRequest" suggestionItems="{locmodel>/reqData/}">
 						<suggestionItems>
-							<core:Item text="{Name}"/>
+							<core:Item text="{AMOUNT}}"/>
 						</suggestionItems>
 					</Input>
 				</f:FormElement>
@@ -42,10 +42,10 @@
 			</f:FormContainer>
 			<f:FormContainer ariaLabelledBy="Title2">
 				<f:FormElement label="Activity">
-					<Input placeholder="Max.70 char." required="true"/>
+					<Input placeholder="Max.70 char." required="true" value="{locmodel>/reqData/AMOUNT/}"/>
 				</f:FormElement>
 				<f:FormElement label="Objective">
-					<Input placeholder="Max.70 char." required="true"/>
+					<Input placeholder="Max.70 char." required="true" value="{locmodel>/reqData/AMOUNT/}"/>
 				</f:FormElement>
 				<f:FormElement label="From">
 					<DatePicker id="DP1" change="handleChange" class="sapUiSmallMarginBottom" afterValueHelpOpen="onafterValueHelpOpen"
@@ -56,7 +56,7 @@
 						displayFormat="dd-MM-yyyy" required="true"/>
 				</f:FormElement>
 				<f:FormElement label="Remarks">
-					<FeedInput post="onPost" showIcon="false"/>
+					<FeedInput post="onPost" showIcon="false" value="{locmodel>/reqData/AMOUNT/}"/>
 				</f:FormElement>
 				<f:layoutData>
 					<f:GridContainerData halfGrid="true"/>
